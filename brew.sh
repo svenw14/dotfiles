@@ -47,6 +47,7 @@ packages=(
     "python-tk"
     "bash"
     "zsh"
+    "coreutils"
     "git"
     "tree"
     "node"

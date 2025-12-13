@@ -84,5 +84,10 @@
     "key": "ctrl+cmd+l",
     "command": "editor.action.selectHighlights",
     "when": "editorFocus"
+  },
+  {
+    "key": "shift+cmd+j",
+    "command": "editor.action.joinLines",
+    "when": "editorTextFocus && !editorReadonly"
   }
 ]

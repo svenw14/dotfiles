@@ -93,5 +93,5 @@ lint.ignore = [
 # SLF001  # Flake8-self – private member access needed to test internal state
 # D       # Pydocstyle – docstrings are often redundant in verbose test names
 # ANN     # Flake8-annotations – type annotations are unnecessary overhead for tests
-"test_*.py" = ["S101", "PLR2004", "SLF001", "D", "ANN"]
-"*_test.py" = ["S101", "PLR2004", "SLF001", "D", "ANN"]
+"test_*.py" = ["S101", "S105","S106", "PLR2004", "SLF001", "D", "ANN"]
+"*_test.py" = ["S101", "S105","S106", "PLR2004", "SLF001", "D", "ANN"]
