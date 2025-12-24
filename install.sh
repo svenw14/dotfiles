@@ -51,7 +51,4 @@ ln -sf "${dotfiledir}/settings/ruff.toml" "${HOME}/.config/ruff/ruff.toml"
 # Run VS Code Script
 ./vscode.sh
 
-# Run the Sublime Script
-./sublime.sh
-
 echo "Installation Complete!"
