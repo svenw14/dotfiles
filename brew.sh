@@ -140,16 +140,13 @@ apps=(
     "google-chrome"
     "firefox"
     "brave-browser"
-    "sublime-text"
     "visual-studio-code"
     "git-credential-manager"
     "docker"
     "claude-code"
     "codex"
     "copilot-cli"
-    "spotify"
-    "discord"
-    "google-drive"
+    "spotify"    
     "gimp"
     "vlc"
     "rectangle"
@@ -214,9 +211,6 @@ echo "Connect Google Account (System Settings -> Internet Accounts). Press enter
 read
 
 echo "Sign in to Spotify. Press enter to continue..."
-read
-
-echo "Sign in to Discord. Press enter to continue..."
 read
 
 echo "Open Rectangle and give it necessary permissions. Press enter to continue..."
