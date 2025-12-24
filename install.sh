@@ -4,7 +4,6 @@
 # And also installs MacOS Software
 # And also installs Homebrew Packages and Casks (Apps)
 # And also sets up VS Code
-# And also sets up Sublime Text
 ############################
 
 # Create the backup directory if it doesn't exist
@@ -12,7 +11,6 @@ current_date=$(date +%Y-%m-%d)
 backup_dir="${HOME}/dotfiles/backups/${LOGNAME}/${current_date}"
 
 mkdir -p "${backup_dir}"
-mkdir -p "${backup_dir}/obsidian"
 echo "Backup dir created"
 
 # dotfiles directory
