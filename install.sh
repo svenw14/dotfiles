@@ -7,6 +7,14 @@
 # And also sets up Sublime Text
 ############################
 
+# Create the backup directory if it doesn't exist
+current_date=$(date +%Y-%m-%d)
+backup_dir="${HOME}/dotfiles/backups/${LOGNAME}/${current_date}"
+
+mkdir -p "${backup_dir}"
+mkdir -p "${backup_dir}/obsidian"
+echo "Backup dir created"
+
 # dotfiles directory
 dotfiledir="${HOME}/dotfiles"
 
@@ -19,6 +27,13 @@ cd "${dotfiledir}" || exit
 
 # create symlinks (will overwrite old dotfiles)
 for file in "${files[@]}"; do
+    # Check if the file already exists in the home directory
+    if [ -e "${HOME}/.${file}" ]; then
+        echo "Backing up $file"
+        # Backup the file to the backup directory
+        cp "${HOME}/.${file}" "${backup_dir}/"
+    fi
+
     echo "Creating symlink to $file in home directory."
     ln -sf "${dotfiledir}/.${file}" "${HOME}/.${file}"
 done
